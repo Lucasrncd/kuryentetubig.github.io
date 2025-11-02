@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.elec_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #cfc124;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.water_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.total_btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #1ecf44;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

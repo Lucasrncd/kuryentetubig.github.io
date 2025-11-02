@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.e_form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+.results {
+  margin-top: 25px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.results h2 {
+  text-align: center;
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.results p {
+  margin: 8px 0;
+  font-size: 20px;
+  color: black;
+}
+
+/* Emphasize total cost */
+.results hr {
+  margin: 15px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.results p:last-of-type {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.results p:last-of-type span {
+  font-size: 32px;
+  color: #004704;
+  font-weight: bold;
+} 
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .e_form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .results p {
+    font-size: 15px;
+  }
+
+  .results p:last-of-type {
+    font-size: 20px;
+  }
+
+  .results p:last-of-type span {
+    font-size: 24px;
+  }
+}

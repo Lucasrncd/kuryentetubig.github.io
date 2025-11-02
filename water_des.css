@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.e_form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#households {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+hr{
+  width: 100%;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.09)
+}
+
+button {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+#generateBtn {
+  background-color: #2196f3;
+  margin-top: 25px;
+}
+
+#generateBtn:hover {
+  background-color: #1976d2;
+}
+
+#calculateBtn {
+  background-color: #4CAF50;
+}
+
+#calculateBtn:hover {
+  background-color: #388e3c;
+}
+
+.results {
+  margin-top: 25px;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  display: none;
+  text-align: center;
+}
+
+.results h2 {
+  color: black;
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  font-weight: bold;
+}
+
+.results p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.results strong {
+  color: #000000;
+}
+
+/* Make "Share per Person" stand out */
+#sharePerPerson {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007836;
+  display: block;
+  margin-top: 5px;
+}
+
+/* Make each "House X" value bigger and bold */
+#houseResults p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004704;
+  margin: 10px 0;
+}
+
+/* Emphasize the total people label */
+#totalPeople {
+  font-weight: bold;
+  color: #000000;
+}
+
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .e_form {
+    width: 95%;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .results h2 {
+    font-size: 20px;
+  }
+
+  .results p {
+    font-size: 15px;
+  }
+
+  #sharePerPerson {
+    font-size: 24px;
+  }
+
+  #houseResults p {
+    font-size: 20px;
+  }
+}

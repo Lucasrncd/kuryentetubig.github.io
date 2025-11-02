@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Calculator</title>
+  <link rel="stylesheet" href="electricity_des.css">
+</head>
+<body>
+  <div class="e_form">
+    <div class="form_contents">
+      <form id="electricityForm">
+        <h1>Electricity Calculator</h1>
+
+        <label>Input Current Reading</label>
+        <input type="number" id="currRead" placeholder="Current Reading" step="0.01" required>
+
+        <label>Input Past Reading</label>
+        <input type="number" id="pastRead" placeholder="Past Reading" step="0.01" required>
+
+        <label>Input Kilowatt per Hour (kwH)</label>
+        <input type="number" id="kwH" placeholder="KwH" step="0.01" required>
+
+        <button type="submit">Show Results</button>
+      </form>
+
+      <div class="results" id="results">
+        <h2>Result Summary</h2>
+        <p><strong>Current Reading: </strong> <span id="currOut"></span></p>
+        <p><strong>Past Reading: </strong> <span id="pastOut"></span></p>
+        <p><strong>Total Consumption: </strong> <span id="consumption"></span> kWh</p>
+        <p><strong>Rate per kWh: </strong><span id="rate"></span></p>
+        <p><strong>Total Payment: </strong> ₱    <span id="payment"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="electricity_script.js"></script>
+</body>
+</html>

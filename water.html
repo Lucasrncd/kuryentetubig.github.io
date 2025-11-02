@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Calculator</title>
+  <link rel="stylesheet" href="water_des.css">
+</head>
+<body>
+  <div class="e_form">
+    <div class="form_contents">
+      <form id="waterForm">
+        <h1>Water Calculator</h1>
+
+        <label for="bill">Input Total Water Bill (₱)</label>
+        <input type="number" id="bill" placeholder="Enter total bill" required>
+
+        <label for="households">Number of Households</label>
+        <input type="number" id="households" placeholder="e.g. 3" required>
+        <hr>
+        <div id="peopleInputs"></div>
+
+        <button type="button" id="generateBtn">Generate Inputs</button>
+        <button type="button" id="calculateBtn">Show Results</button>
+      </form>
+
+      <div class="results" id="results">
+        <h2>Result Summary</h2>
+        <p><strong>Total People:</strong> <span id="totalPeople"></span></p>
+        <p><strong>Share per Person:</strong> ₱ <span id="sharePerPerson"></span></p>
+        <div id="houseResults"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="water_script.js"></script>
+</body>
+</html>

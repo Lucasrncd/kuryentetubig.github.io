@@ -1,0 +1,155 @@
+/* ====== BASE STYLES ====== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.e_form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.results {
+  margin-top: 25px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+.results h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #222;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.results p {
+  margin: 8px 0;
+  font-size: 17px;
+  color: #333;
+}
+
+/* Highlight Total Payment */
+#payment {
+  font-size: 28px;
+  font-weight: bold;
+  color: #014107;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+    align-items: flex-start;
+  }
+
+  .e_form {
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input, button {
+    font-size: 15px;
+  }
+
+  .results h2 {
+    font-size: 20px;
+  }
+
+  .results p {
+    font-size: 16px;
+  }
+
+  #payment {
+    font-size: 20px;
+  }
+}
+
+/* ====== SMALL SCREEN OPTIMIZATION ====== */
+@media (max-width: 400px) {
+  .e_form {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .results {
+    padding: 10px;
+  }
+
+  .results p {
+    font-size: 15px;
+  }
+
+  #payment {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Billing Calculator</title>
+  <link rel="stylesheet" href="total_des.css">
+</head>
+<body>
+  <div class="e_form">
+    <div class="form_contents">
+      <h1>Total Billing</h1>
+
+      <label for="elecCost">Input Electricity Cost (₱)</label>
+      <input type="number" id="elecCost" placeholder="Enter electricity cost" required>
+
+      <label for="waterCost">Input Water Cost (₱)</label>
+      <input type="number" id="waterCost" placeholder="Enter water cost" required>
+
+      <button id="calcTotalBtn">Show Total</button>
+
+      <div class="results" id="results">
+        <h2>Billing Summary</h2>
+        <p><strong>Electricity Cost:</strong> ₱ <span id="elecOut"></span></p>
+        <p><strong>Water Cost:</strong> ₱ <span id="waterOut"></span></p>
+        <hr>
+        <p><strong>Total Cost:</strong> ₱ <span id="totalOut"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="total_script.js"></script>
+</body>
+</html>
